@@ -1,1 +1,26 @@
-
+Algoritmo DiezDigitos
+	Leer num;
+	Si num >= 1000000000 y num <= 9999999999 Entonces
+		Op1 = Trunc (num/1000000000);
+		a = num mod 1000000000;
+		Op2 = Trunc (a/100000000);
+		b = a mod 100000000;
+		Op3 = Trunc (b/10000000);
+		c = b mod 10000000;
+		Op4 = Trunc (c/1000000);
+		d = c mod 1000000;
+		Op5 = Trunc (d/100000);
+		e = d mod 100000;
+		Op6 = Trunc (e/10000);
+		f = e mod 10000;
+		Op7 = Trunc (f/1000);
+		g = f mod 1000;
+		Op8 = Trunc (g/100);
+		h = g mod 100;
+		Op9 = Trunc (h/10);
+		resto = h mod 10;
+		
+		Escribir "Numero inverso: ",resto, Op9, Op8, Op7, Op6, Op5, Op4, Op3, Op2, Op1;
+	Sino Escribir " Numero no valido, solo numeros de 10 digitos"
+	FinSi
+FinAlgoritmo
